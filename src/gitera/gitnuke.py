@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 import subprocess
 
-for i in range(100):
+try:
+    cm = int(input("How many commits you want? "))
+except ValueError:
+    print("Invalid input. Proceeding with default 100 commits")
+    cm = 100
+
+for i in range(cm):
     subprocess.run(
         [f'echo "{i}" >> gitout && git add . && git commit -m "Test commit {i}"'],
         shell=True,
