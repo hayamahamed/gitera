@@ -1,6 +1,6 @@
 [project]
 name = "gitera"
-version = "0.0.12"
+version = "0.0.13"
 authors = [
   { name="Hayam Ahamed", email="hayam@duck.com" },
 ]
@@ -22,6 +22,7 @@ Issues = "https://github.com/hayamahamed"
 where = ["src"]
 
 [project.scripts]
+gitera = "gitera.gitera:main"
 gitout = "gitera.gitout:main"
 got = "gitera.gitout:main"
 gitnuke = "gitera.gitnuke:main"
