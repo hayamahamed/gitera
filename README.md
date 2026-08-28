@@ -21,3 +21,12 @@ Gitera consists of:
 | WSL                       | 8/10                          | Support can be upto 85%
 
 This tool relies on POSIX APIs to function, primarily the POSIX Shell (bin/sh), so all Unix and Unix like operating systems could handle this program.
+
+
+
+**Commands and its corresponding TUIs**
+|  Command   | UI                            
+|------------|------------------------------------
+|Gitera      | ![Gitera UI](assets/gitera-ui.jpg)
+|Gitout      | ![Gitout UI](assets/gitout-ui.svg)
+
