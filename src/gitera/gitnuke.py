@@ -16,6 +16,12 @@ def inp():
             capture_output=True,
             check=False,
         )
+        if i == 1:
+            print("Started 1,2,3...")
+        elif i == cm/2:
+            print("Half way done...")
+        elif i == cm - 1:
+            print("Completed.")
         subprocess.run(["rm gitout"], shell=True, check=False)
 
 
