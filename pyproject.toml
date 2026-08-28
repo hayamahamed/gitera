@@ -1,0 +1,25 @@
+[project]
+name = "gitera"
+version = "0.0.4"
+authors = [
+  { name="Hayam Ahamed", email="hayam@duck.com" },
+]
+description = "Gitera, the next era for git."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/hayamahamed"
+Issues = "https://github.com/hayamahamed"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+gitout = "gitera.gitout:main"
