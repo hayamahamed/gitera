@@ -34,7 +34,7 @@ This is the parent command that shows version and other commands usage
 
 **Gitout**
 
-This is the one of the iconic command for gitera. Users can run gitout and it will show all commits in a scrollable way and clicking it checks out to it along with quitting checkout to the commit and branch you were in before, so you don't have to do manually instead of doing git log --oneline , copying the hash and git checkout hash
+This is the iconic command for gitera. Users can run gitout and it will show all commits in a scrollable way and clicking it checks out to it along with quitting checkout to the commit and branch you were in before, so you don't have to do manually instead of doing git log --oneline , copying the hash and git checkout hash
 
 ![Gitout UI](assets/gitout.jpg)
 
