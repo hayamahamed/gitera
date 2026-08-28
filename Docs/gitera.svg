@@ -2,16 +2,16 @@
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 
 <svg
-   width="384.23788"
-   height="384.138"
-   viewBox="0 0 30.739031 30.73104"
+   width="384.23801"
+   height="384.13797"
+   viewBox="0 0 30.739041 30.731038"
    aria-hidden="true"
    role="img"
    class="iconify iconify--emojione-monotone"
    preserveAspectRatio="xMidYMid"
    version="1.1"
    id="svg1"
-   sodipodi:docname="dove-svgrepo-com.svg"
+   sodipodi:docname="gitera.svg"
    xml:space="preserve"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -27,15 +27,23 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.70888672"
-     inkscape:cx="90.987739"
-     inkscape:cy="136.83427"
+     inkscape:zoom="1.167324"
+     inkscape:cx="296.83275"
+     inkscape:cy="256.14139"
      inkscape:window-width="1920"
      inkscape:window-height="1107"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" /><g
+     inkscape:current-layer="svg1" /><rect
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="rect1"
+     width="23.483673"
+     height="23.483673"
+     x="9.9911184"
+     y="-11.741837"
+     ry="2.9952409"
+     transform="matrix(0.70719881,0.70701474,-0.70719881,0.70701474,0,0)" /><g
      id="g1"
      transform="matrix(0.08,0,0,0.08,38.676483,-9.5157477)"><path
        fill="#f05133"
