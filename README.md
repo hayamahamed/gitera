@@ -7,6 +7,7 @@
 
     pip install gitera
 Gitera consists of:
+  -  gitera  - The parent command that shows gitera version and how to use other related commands 
   -  gitout  - A CLI tool to walk through all of your commits and checkout with a single click.
   -  gitnuke - Create numerous commits in seconds for experiments and testings. (Not usable yet)
 
