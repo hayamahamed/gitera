@@ -1,6 +1,6 @@
 [project]
 name = "gitera"
-version = "0.0.10"
+version = "0.0.11"
 authors = [
   { name="Hayam Ahamed", email="hayam@duck.com" },
 ]

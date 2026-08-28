@@ -132,7 +132,7 @@ def get_key():
 CLEAR = "\x1b[2J\x1b[H"
 HIDE_CURSOR = "\x1b[?25l"
 SHOW_CURSOR = "\x1b[?25h"
-REVERSE = "\x1b[41m"
+REVERSE = "\x1b[30m\x1b[102m"
 DIM = "\x1b[31m"
 RESET = "\x1b[0m"
 
@@ -148,7 +148,7 @@ def render(commits, selected, head_hash, status=""):
     end = min(n, start + MAX_ROWS)
 
     lines = [CLEAR]
-    lines.append("git commit navigator — Up/Down move, Enter checkout, q quit")
+    lines.append("gitout from gitera: Up/Down move, Enter checkout, q quit")
     lines.append(f"({selected + 1}/{n})")
     lines.append("")
 
