@@ -27,6 +27,7 @@ This tool relies on POSIX APIs to function, primarily the POSIX Shell (bin/sh), 
 **Commands and its corresponding TUIs**
 |  Command   | UI                            
 |------------|------------------------------------
-|Gitera      | ![Gitera UI](assets/gitera-ui.jpg)
+|Gitera      | ![Gitera UI](assets/gitera-ui.svg)
 |Gitout      | ![Gitout UI](assets/gitout-ui.svg)
+|Gitnuke     | ![Gitnuke UI](assets/gitnuke-ui.svg)
 
