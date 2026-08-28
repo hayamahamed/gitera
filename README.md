@@ -40,7 +40,7 @@ This is the one of the iconic command for gitera. Users can run gitout and it wi
 
 **Gitnuke**
 
-This command commits how much comment the user said to do. If a user gives invalid number it will default to 100 commits starting from 0 as the test no.
+This command commits how much the user ordered to do. If a user gives invalid number it will default to 100 commits starting from 0 as the test no.
 
 ![Gitnuke UI](assets/gitnuke.jpg)
 
