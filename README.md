@@ -11,10 +11,6 @@ Gitera consists of:
   -  gitout  - A CLI tool to walk through all of your commits and checkout with a single click.
   -  gitnuke - Create numerous commits in seconds for experiments and testings. (Not usable yet)
 
- _Gitout UI (White)_
-|![gitout-ui-white](assets/ui.png)|
-|---------------------------------|
-
 **Supported Platforms :**
 | Platforms                 | Support Level / Compatibility | Note
 |---------------------------|-------------------------------|------------------------------------------------------------------------------
