@@ -21,9 +21,6 @@ if os.name != "posix":
 import termios
 import tty
 
-hei = shutil.get_terminal_size().lines
-hei = hei - 7
-
 
 def run_git(args):
     return subprocess.run(["git", *args], capture_output=True, text=True, check=False)
@@ -136,7 +133,7 @@ REVERSE = "\x1b[30m\x1b[102m"
 DIM = "\x1b[31m"
 RESET = "\x1b[0m"
 
-MAX_ROWS = hei
+MAX_ROWS = 20
 
 
 def render(commits, selected, head_hash, status=""):
@@ -194,31 +191,39 @@ def main():
 
             if key == DOWN:
                 selected = (selected + 1) % n
-                status = ""
+                status = (
+                    "Use Up/Down to browse, Enter to checkout the highlighted commit."
+                )
             elif key == UP:
                 selected = (selected - 1) % n
-                status = ""
+                status = (
+                    "Use Up/Down to browse, Enter to checkout the highlighted commit."
+                )
             elif key == ENTER:
                 target = commits[selected]
                 ok, err = checkout_commit(target["hash"])
                 if ok:
                     head_hash = target["hash"]
-                    status = f"Checked out at {target['hash']} — {target['subject']}"
+
+                    result = run_git(["show", f"{get_current_head_hash()}"]).stdout
+                    GREEN = "\033[92m"
+                    RESET = "\033[0m"
+                    result_colored = f"{GREEN}{result}{RESET}"
+                    status = f"Checked out at {target['hash']} — {target['subject']} \n{result_colored}"
                 else:
                     status = f"checkout failed: {err}"
             elif key == QUIT:
+                run_git(["checkout", f"{bd}"])
+                print(
+                    "\nYou have been checked out to the branch you were in before running this program, gitout"
+                )
+                print("\nGoodbye.")
                 break
+
     finally:
         sys.stdout.write(SHOW_CURSOR)
         sys.stdout.write("\n")
         sys.stdout.flush()
-
-    run_git(["checkout", f"{bd}"])
-    print(
-        "You have been checked out to the branch you were in before running this program, gitout"
-    )
-
-    print("Goodbye.")
 
 
 if __name__ == "__main__":
