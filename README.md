@@ -26,7 +26,7 @@ None of these has any sub commands so you may try all of these directly
 ```
 gitout
 ```
-![gitout in action and quitting](Docs/got.png)
+![gitout in action and quitting](docs/got.png)
 
 
 `gitnuke` creates a specified amount (in numeric) of commits (for testing purposes).
